@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "JTR Github IO user page",
+  "description": "It's just my github user page",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "JTR <riddick.taylor@gmail.com>",
   "dependencies": {
     "gatsby": "^1.9.115",
     "gatsby-link": "^1.6.28",
