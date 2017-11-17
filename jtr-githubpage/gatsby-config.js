@@ -3,5 +3,8 @@ module.exports = {
     title: `JTRiddick Github Page`,
   },
   plugins: [`gatsby-plugin-react-helmet`],
-  pathPrefix: `/jtriddick.github.io`,
+  pathPrefix: `/jtr-githubpage`,
+}
+module.exports = {
+  pathPrefix: `/jtr-githubpage`
 }
