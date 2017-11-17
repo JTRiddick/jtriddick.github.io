@@ -1,6 +1,6 @@
 {
-  "name": "JTR Github IO user page",
-  "description": "It's just my github user page",
+  "name": "jtr-githubpage",
+  "description": "Gatsby default starter",
   "version": "1.0.0",
   "author": "JTR <riddick.taylor@gmail.com>",
   "dependencies": {
