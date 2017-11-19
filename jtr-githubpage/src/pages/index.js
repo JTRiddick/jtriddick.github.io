@@ -26,7 +26,7 @@ const IndexPage = () => {
 
           <a href="#who">
               {/* <i className="fa fa-chevron-circle-down fa-5x"></i> */}
-              <FontAwesome className='chevron-circle-down'
+              <FontAwesome name='chevron-circle-down'
                 size='5x'
               />
           </a>
@@ -53,7 +53,7 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
-    
+
       <section className= "container group block block-three">
 
         <div className="panel panel-default">
@@ -66,11 +66,12 @@ const IndexPage = () => {
                 <h3>
                   Skills
                 </h3>
-                <ul>
+                <ul className="skill-list">
                   <li>Javascript / ES6</li>
                   <li>HMTL5 / CSS3</li>
                   <li>SASS</li>
                   <li>React</li>
+                  <li>Redux</li>
                   <li>JQuery</li>
                   <li>Node</li>
                   <li>Bootstrap</li>
@@ -81,10 +82,15 @@ const IndexPage = () => {
                 <h3>
                   Tools
                 </h3>
-                <ul>
-                  <li>git</li>
-                  <li>Webpack 2</li>
-                  <li>npm</li>
+                <ul className="tool-list">
+                  <li>Git Source Control</li>
+                  <li>Webpack 3</li>
+                  <li>NPM</li>
+                  <li>Gulp</li>
+                  <li>Gatsby</li>
+                  <li>AWS EC2 + S3</li>
+                  <li>Linux / OSX Bash$</li>
+                  <li>VirtualBox</li>
                   <li>Unity</li>
 
                 </ul>

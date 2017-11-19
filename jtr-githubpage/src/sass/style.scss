@@ -191,6 +191,7 @@ a{
   font-size: 1em;
   height:100%;
   overflow: auto;
+
 }
 .block-one,.block-two,.block-three {
   color:$sBlau;
@@ -207,6 +208,15 @@ a{
 
   .col-third{
     text-align: center;
+  }
+
+  .skill-list,.tool-list{
+    margin-bottom: 0.25rem;
+    list-style-type: square;
+    li{
+      margin-left: 7em;
+      max-width: 40%;
+    }
   }
 }
 
@@ -494,10 +504,9 @@ a{
     overflow: auto;
     min-height: 33px;
     a:hover{
-      color:$bluprint;
+      color:$wit;
       text-shadow: 1px 1px 1px $grau;
-      font-weight: 800;
-      border-bottom:3px solid $wit;
+      font-weight: 600;
     }
   }
 }
