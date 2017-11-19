@@ -29,7 +29,7 @@ const Header = () => (
             textDecoration: 'none',
           }}
         >
-          Jordan Taylor Riddick
+          Enjoy Relative Internet Rumpus With
         </Link>
       </h1>
     </div>

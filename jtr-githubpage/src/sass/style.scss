@@ -27,6 +27,11 @@ body .page-container{
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  width:100%;
+  max-width: 2356px;
+  margin:0 auto;
+  height: auto;
 
 }
 h1{
@@ -48,13 +53,7 @@ a{
   color:white;
   text-shadow: 1px 1px #bfc0c0;
 }
-.page-container{
-  position: relative;
-  width:100%;
-  max-width: 2356px;
-  margin:0 auto;
 
-}
 .blueprint-grid{
   background-color: $bluprint;
   background:url(../img/rob-bye-182304.jpg) center no-repeat;
@@ -118,7 +117,7 @@ a{
 }
 
 .superheader::after{
-
+  content: '';
   z-index: 1;
 }
 .fa-chevron-circle-down{
@@ -190,7 +189,8 @@ a{
   z-index: 1;
   padding: 0.25em;
   font-size: 1em;
-  min-height: 333px;
+  height:100%;
+  overflow: auto;
 }
 .block-one,.block-two,.block-three {
   color:$sBlau;
@@ -503,21 +503,12 @@ a{
 }
 
 footer{
+  clear:both;
   color:$grau;
   margin-top: 1em;
   background-color: $deepPurp;
 }
 
-.group{
-
-}
-//put group on parent of floated elements for clearfix/collapse prevent
-#openModal{
-
-}
-#quincy{
-
-}
 
 #extended-content{
   color: #BFc0c0;

@@ -53,17 +53,7 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
-      <section className= "container group block block-two">
-
-        <div className="panel panel-default">
-          <div className="panel-heading">
-            <h2>Important things</h2>
-          </div>
-          <div className="panel-body">
-
-          </div>
-        </div>
-      </section>
+    
       <section className= "container group block block-three">
 
         <div className="panel panel-default">
@@ -114,28 +104,6 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
-
-      {/* <!-- Modal Boxes --> */}
-
-      {/* <!-- <div className='generic container btn'>
-       <a className="button large" href="#" role="button" id="extend-btn">I would like to know more. &raquo;</a>
-      </div> --> */}
-
-      <div id= "extended-content">
-
-        {/* <!--Extra Content here? --> */}
-        <div className= "container group block-one">
-
-          <div className="panel panel-default">
-            <div className="panel-heading">There would be content here
-
-            </div>
-            <div className="panel-body">
-                But there is none at the moment
-            </div>
-          </div>
-        </div>
-      </div>
 
     </main>
 
