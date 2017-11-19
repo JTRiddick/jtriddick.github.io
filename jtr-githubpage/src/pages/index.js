@@ -1,13 +1,145 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
 
-const IndexPage = () => (
+import FontAwesome from 'react-fontawesome';
+import '../sass/style.scss';
+
+
+const IndexPage = () => {
+  return(
   <div>
-    <h1>JTRiddick's Github Page</h1>
-    <p>Hey if you're here now</p>
-    <p>You're looking at a default Gatsby deploy</p>
-    <Link to="/page-2/">Go to page 2</Link>
-  </div>
-)
+    <main className="page-container">
+      <nav className="navbar">
 
-export default IndexPage
+      </nav>
+      {/* <!-- Main jumbotron--> */}
+      <header className="superheader super-fill centered vaporwave-road">
+        <div className='container'>
+          <h1>Jordan Taylor Riddick</h1>
+        </div>
+        <div className="container">
+          <h2>UI/UX . Front-End Dev</h2>
+          <p><span>How's it going?</span></p>
+          <p><span>You don't have to answer.</span></p>
+        </div>
+        <div className="container">
+
+          <a href="#who">
+              {/* <i className="fa fa-chevron-circle-down fa-5x"></i> */}
+              <FontAwesome className='chevron-circle-down'
+                size='5x'
+              />
+          </a>
+
+        </div>
+      </header>
+
+      <section className= "container group block block-one" >
+
+        <div className="panel panel-default" id="who">
+          <div className="panel-heading">
+            <h2>But Who This?</h2>
+          </div>
+          <div className="panel-body centered">
+            <p>
+              I bring a... "unique" perspective to developing user interfaces, responsive sites, apps, and games
+            </p>
+            <p>
+              I like making interactive web zones with Node, Express, and React. It's pretty great so far.
+            </p>
+            <p>
+              The best thing about JavaScript is how it plumps when you cook it, like a hot dog.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className= "container group block block-two">
+
+        <div className="panel panel-default">
+          <div className="panel-heading">
+            <h2>Important things</h2>
+          </div>
+          <div className="panel-body">
+
+          </div>
+        </div>
+      </section>
+      <section className= "container group block block-three">
+
+        <div className="panel panel-default">
+          <div className="panel-heading">
+            <h2>More About Me</h2>
+          </div>
+          <div className="panel-body">
+            <div className="row">
+              <div className="col-third">
+                <h3>
+                  Skills
+                </h3>
+                <ul>
+                  <li>Javascript / ES6</li>
+                  <li>HMTL5 / CSS3</li>
+                  <li>SASS</li>
+                  <li>React</li>
+                  <li>JQuery</li>
+                  <li>Node</li>
+                  <li>Bootstrap</li>
+                  <li>Mongo</li>
+                </ul>
+              </div>
+              <div className="col-third">
+                <h3>
+                  Tools
+                </h3>
+                <ul>
+                  <li>git</li>
+                  <li>Webpack 2</li>
+                  <li>npm</li>
+                  <li>Unity</li>
+
+                </ul>
+              </div>
+              <div className="col-third">
+                <div id="contact">
+                  <div className="well well-lg">
+                    <a href="http://github.com/JTRiddick" target="_blank"><i className="fa fa-github fa-4x"></i></a>
+                    <a href="https://www.linkedin.com/in/jtriddick/" target="_blank"><i className="fa fa-linkedin fa-4x"></i></a>
+                    <div className="well contact">
+                      <p>Send me a message: <a href="mailto:riddick.taylor@gmail.com?Subject=Well%20Hello%20There" target="_top">Riddick.Taylor@gmail.com</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* <!-- Modal Boxes --> */}
+
+      {/* <!-- <div className='generic container btn'>
+       <a className="button large" href="#" role="button" id="extend-btn">I would like to know more. &raquo;</a>
+      </div> --> */}
+
+      <div id= "extended-content">
+
+        {/* <!--Extra Content here? --> */}
+        <div className= "container group block-one">
+
+          <div className="panel panel-default">
+            <div className="panel-heading">There would be content here
+
+            </div>
+            <div className="panel-body">
+                But there is none at the moment
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+
+  </div>)
+}
+export default IndexPage;
