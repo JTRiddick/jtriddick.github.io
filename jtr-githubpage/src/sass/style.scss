@@ -1,9 +1,5 @@
 @import "./palette.scss";
 
-@import url('http://fonts.googleapis.com/css?family=Raleway:700,400,300');
-@import url('http://fonts.googleapis.com/css?family=Roboto:700,400,300');
-@import url('http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300&amp;subset=latin,latin-ext');
-
 
 
 
@@ -23,7 +19,7 @@ body{
 }
 
 body .page-container{
-  font-family: 'Dosis','Raleway','Open Sans',sans-serif;
+  font-family: 'Raleway','Open Sans',sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -36,7 +32,7 @@ body .page-container{
 }
 h1{
   font-size:3em;
-  font-family: 'Dosis-SemiBold';
+  font-family: 'Roboto',monospace;
 }
 h2{
   font-size: 2em;
@@ -54,21 +50,17 @@ a{
   text-shadow: 1px 1px #bfc0c0;
 }
 
-.blueprint-grid{
+.github-profile-bg{
   background-color: $bluprint;
-  background:url(../img/rob-bye-182304.jpg) center no-repeat;
+  background:url(../img/rob-bye-182304.jpg) center repeat;
   background-size:133%;
 }
-.vaporwave-road{
-  background-color: $deepPurp;
-  background:url(../img/header_resize_bg.jpg) center no-repeat;
-  background-size:100%;
-}
+
 .superheader{
 
   max-height: 100%;
   overflow: hidden;
-  color: $teel;
+  color: black;
   position: relative;
   transition: all 0.50s ease-in-out;
   z-index: 5;
@@ -78,19 +70,17 @@ a{
   h1{
     font-size: 5em;
     font-weight: 700;
-    text-shadow: 6px 2px $deepPurp;
+    text-shadow: 6px 2px $orange;
+    color: $deepPurp;
   }
 
   span{
-    font-style: italic;
     font-size: 200%;
     font-weight: lighter;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
   }
 
-  .container{
-    margin:1% 20% 0 20%;
-  }
+
   :nth-child(2){
     max-width: 48%;
     margin:10% auto 10px auto;
@@ -239,162 +229,6 @@ a{
 
 
 
-.portfolio-list{
-  overflow: auto;
-
-  .archilocator{
-    background:url(../img/al-screencap-1.jpg) center no-repeat $grau;
-    background-size:cover;
-  }
-  .archilocator:target{
-    display: block;
-    max-width: 960px;
-    max-height:600px;
-    background:url(../img/al-screencap-1.jpg) center no-repeat;
-  }
-  .good-taste{
-    background:url(../img/blu-boomerang-1.png) center no-repeat $grau;
-    background-size:cover;
-  }
-  .good-taste:target{
-    display: block;
-    max-width: 960px;
-    max-height: 600px;
-    background:url(../img/blu-boomerang-1.png) center no-repeat;
-  }
-  .wages-of-space{
-    background:url(../img/wages-of-space-1.png) center no-repeat $grau;
-    background-size:cover;
-  }
-  .wages-of-space:target{
-    display: block;
-    max-width: 960px;
-    max-height: 600px;
-    background-size:66% 66%;
-    background:url(../img/wages-of-space-1.png) center no-repeat;
-  }
-  .craig-schumacher{
-    background:url(../img/craig-site-2.png) center no-repeat $grau;
-    background-size:cover;
-  }
-  .craig-schumacher:target{
-    display: block;
-    max-width: 960px;
-    max-height: 600px;
-    background:url(../img/craig-site-2.png) center no-repeat;
-    background-size:66% 66%;
-  }
-  li{
-    float:left;
-  }
-  li:hover .portfolio-content{
-    background-color:rgba(10,10,10,0.767);
-  }
-  .portfolio-content{
-    display: none;
-
-  }
-  .portfolio-item:hover .portfolio-content{
-    display: inline-block;
-    line-height: 1.4;
-    letter-spacing: 1px;
-    font-size: 1.7em;
-    text-align: center;
-    span{
-      font-weight: bold;
-      color:$teel;
-      position: relative;
-      top:120px;
-      text-shadow: 2px 2px $deepPurp;
-    }
-    span:hover{
-      color:$sBlau;
-    }
-
-  }
-  .portfolio-item{
-    overflow: auto;
-    width: 300px;
-    height:300px;
-    a{
-      display: block;
-      height: 100%;
-      width: 100%;
-      :active{
-        .portfolio-content{
-          span{
-            color:$rot;
-          }
-        }
-    }
-
-    }
-
-
-  }
-  .portfolio-content{
-    width: inherit;
-    height:inherit;
-    background-color:rgba(10,10,10,0.12);
-
-  }
-
-}
-.modalDialog{
-  color:$deepPurp;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background:rgba(0,0,0,0.8);
-  z-index: 99999;
-  opacity: 0;
-  transition: all 400ms ease-in-out;
-  pointer-events: none;
-
-  .modal-content{
-    font-size: 18px;
-    max-height: 720px;
-    max-width:640px;
-    position: fixed;
-    top: 33%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin:10% auto;
-    padding:5px 20px 5px 20px;
-    border-radius:10px;
-    background:#fff;
-    background: -moz-linear-gradient(#fff, $deepPurp);
-	  background: -webkit-linear-gradient(#fff, $deepPurp);
-	  background: -o-linear-gradient(#fff, $deepPurp);
-
-    img{
-      max-width: 100%;
-
-    }
-    .button{
-      display: inline-block;
-      text-shadow: none;
-      float:right;
-    }
-    .button:hover{
-      background-color: $teel;
-    }
-  }
-
-  h3{
-    font-style:italic;
-    padding:9px;
-    font-family: 'Dosis-SemiBold';
-  }
-  p{
-    padding:9px;
-    color:$wit;
-    display: inline;
-  }
-
-}
 .modalDialog:target{
 
   opacity: 1;
