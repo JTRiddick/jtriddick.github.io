@@ -51,9 +51,10 @@ a{
 }
 
 .github-profile-bg{
-  background-color: $bluprint;
-  background:url(../img/rob-bye-182304.jpg) center repeat;
-  background-size:133%;
+  background: $bluprint;
+  background-image: linear-gradient(to bottom, $deepBlau, #d0edf5 100%);
+  padding: 20px 15px 15px 15px;
+  position: relative;
 }
 
 .superheader{
@@ -71,7 +72,7 @@ a{
     font-size: 5em;
     font-weight: 700;
     text-shadow: 6px 2px $orange;
-    color: $deepPurp;
+    color: $bluprint;
   }
 
   span{
